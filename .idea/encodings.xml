@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/common/config.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/db.cfg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/static/css/monitor.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/static/css/org/bootstrap-theme.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/static/css/org/bootstrap-theme.css.map" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/static/css/org/bootstrap-theme.min.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/static/css/org/bootstrap.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/static/css/org/bootstrap.css.map" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/static/css/org/bootstrap.min.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/static/css/org/font-awesome.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/static/css/org/font-awesome.min.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/static/css/org/jasny-bootstrap.css.map" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/static/css/org/jasny-btsp.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/static/js/monitor.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/static/js/org/bootstrap.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/static/js/org/bootstrap.min.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/static/js/org/jquery-2.1.3.min.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/static/js/org/jquery.min.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/static/js/org/skin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/templates/monitor.html" charset="UTF-8" />
+  </component>
+</project>
+

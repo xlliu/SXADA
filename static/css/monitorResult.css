@@ -1,0 +1,14 @@
+#monitor_top{
+	width:800px;
+	height:100px;
+	text-align:center;
+    border:  1px lightgrey solid;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px lightgrey;
+    margin:0 auto;
+    background: #f9f9f9;
+}
+
+#resultList{
+    background: #f9f9f9;
+}

@@ -1,0 +1,53 @@
+.imgdiv{
+    height: 80px;
+    width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    position: relative;
+}
+
+
+
+.btdiv{
+    height: 400px;
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+.btdiv input, #span_tip{
+    display: block;
+    font-family: '微软雅黑';
+    text-indent: 3px;
+    width: 300px;
+    height: 35px;
+    margin-top:10px;
+    margin-bottom:10px;
+    /*border: 1px solid red;*/
+    position: relative;
+    left: 35%;
+    right: 42%;
+}
+
+.btdiv input[type=text], .btdiv input[type=password]{
+    color: darkgrey;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+.btdiv input[type=text]:focus, .btdiv input[type=password]:focus,.btdiv input[type=text]:hover, .btdiv input[type=password]:hover{
+    border: 1px #337ab7 solid;
+}
+
+.btdiv input[type=button]{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #337ab7;
+    background: #ffffff;
+}
+
+.btdiv input[type=button]:focus, .btdiv input[type=button]:hover{
+    text-decoration: none;
+    background-color: #eee
+}

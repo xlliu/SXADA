@@ -1,0 +1,40 @@
+<input type="hidden" id="totalmonitorpage" value={{ totalmonitorpage }}>
+<input type="hidden" id="currentpage" value={{ currentpage }} />
+{% import time as t %}
+{% for data in datas %}
+<div style="width:800px;border:  1px lightgrey solid;border-radius: 10px;box-shadow: 3px 3px 10px lightgrey;">
+<div style="width:780px;height:50px;margin:10px">
+    <span>
+        <div style="float:left">
+            <img style="width:50px;height:50px;" src="{{ data['user_head_url'] }}">
+        </div>
+        <div style="float:left">
+            <div>{{ data["user_name"] if data["user_name"] else "目前无标题"}}</div>
+            <div>{{ t.strftime("%Y-%m-%d %H:%M:%S",t.localtime(data["time"])) if data["time"] and data["time"]>0  else "目前无数据" }}</div>
+        </div>
+    </span>
+</div>
+<div style="margin:10px;width:780px;">{{ data["content"] }}</div>
+<div style="margin:10px">
+    {% for img in data["image_url"] %}
+    <a href="{{ img }}" target="_blank"><img src="{{ img }}" style="width:140px;" /></a>
+    {% end %}
+</div>
+<div style="margin:10px">{{ data["like_num"] }}人赞了,{{ data["comment_num"] }}人评论了</div>
+</div>
+{% end %}
+</div>
+<div>
+<ul class="pager">
+    <span>
+        <li><a href="#" id="pagefirst" style="display: none" onclick="pageFirst()">首页</a></li>
+        <li><a href="#" id="pagetop" style="display: none" onclick="pageTop()">上一页</a></li>
+        {% if currentpage!=totalmonitorpage %}
+            <li><a href="#" id="pagedown" onclick="pageDown()">下一页</a></li>
+            <li><a href="#" id="pagelast" onclick="pageLast()">末页</a></li>
+        {% end %}
+        {% if totalmonitorpage!=0 %}
+        当前在{{ currentpage+1 }}页,共{{ totalmonitorpage+1 }}页
+        {% end %}
+    </span>
+</ul>

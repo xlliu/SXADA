@@ -1,0 +1,45 @@
+<input type="hidden" id="totalmonitorpage" value={{ totalmonitorpage }}>
+<input type="hidden" id="currentpage" value={{ currentpage }}>
+{% import time as t %}
+{% if accountList %}
+<table id="tab">
+    <tr>
+        <th>名称</th><th>类型</th><th>上次分析时间</th><th>动态</th><th>最新动态时间</th><th>操作</th>
+    </tr>
+    {% for d in accountList %}
+    <tr>
+{#        <td><a href="/details?fbid={{ d['_id'] }}" target=_blank>{{ d['name'] }}</a></td>#}
+        <td>{{ d['name'] }}</td>
+        <td>{{ d['type'] }}</td>
+        <td>{{ str(d['update_time'])[0:19] }}</td>
+        <td>{{ d['timeline_count'] }}</td>
+        <td>{{ t.strftime("%Y-%m-%d %H:%M:%S",t.localtime(d['last_timeline_time'])) if d['last_timeline_time'] else "目前无数据" }}</td>
+        <td>
+            {% if d['status'] == 1 %}
+            <a href="#2" onclick="rem('{{ d['_id'] }}')">移除</a>
+            {% else %}
+            <a href="#2" onclick="resub('{{ d['_id'] }}')">监控</a>
+            {% end %}
+        </td>
+
+    </tr>
+    {% end %}
+</table>
+<tr>
+    <td colspan="6" style="text-align: center">
+    <ul class="pager">
+        <span>
+            <li><a href="#" id="pagefirst" style="display: none" onclick="pageFirst()">首页</a></li>
+            <li><a href="#" id="pagetop" style="display: none" onclick="pageTop()">上一页</a></li>
+            {% if currentpage!=totalmonitorpage %}
+            <li><a href="#" id="pagedown" onclick="pageDown()">下一页</a></li>
+            <li><a href="#" id="pagelast" onclick="pageLast()">末页</a></li>
+            {% end %}
+            {% if totalmonitorpage!=0 %}
+            当前在{{ currentpage+1 }}页,共{{ totalmonitorpage+1 }}页
+            {% end %}
+        </span>
+    </ul>
+    </td>
+</tr>
+{% end %}

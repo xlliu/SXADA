@@ -1,0 +1,149 @@
+#all_model{
+}
+#all{
+	width:1000px;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+#monitor_top{
+	width:1000px;
+	height:100px;
+	text-align:center;
+    border:  1px lightgrey solid;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px lightgrey;
+    background: #f9f9f9;
+}
+
+
+#monitor_left{
+	width:100px;
+	height:100%;
+	float:left;
+    border:  1px lightgrey solid;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px lightgrey;
+    background: #f9f9f9;
+}
+#monitor_right{
+	width:895px;
+	height:100%;
+	float:left;
+    border:  1px lightgrey solid;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px lightgrey;
+}
+
+#monitor_left input{
+	width:75px;
+	height:25px;
+	margin-left:12px;
+	margin-top:15px;
+}
+
+table tr td{
+	width:200px;
+	height:auto;
+	text-align:center;
+}
+
+table tr th{
+	text-align:center;
+}
+
+
+/*#mask{*/
+	/*top:0px;*/
+	/*bottom:0px;*/
+	/*left:0px;*/
+	/*right:0px;*/
+	/*opacity:0.4;*/
+	/*background-color:#000;*/
+	/*position:fixed;*/
+	/*z-index:50;*/
+	/*display:none;*/
+/*}*/
+
+#url_1{
+	width:650px;
+	height:50px;
+    background-color:#9acfea;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left:-325px;
+	margin-top:-11px;
+	z-index:60;
+	display:none;
+}
+
+#url_text{
+	width:600px;
+	height:28px;
+}
+
+#details{
+    width: 700px;
+    height: 500px;
+    left: 50%;
+    top: 50%;
+    margin-left: -350px;
+    margin-top: -250px;
+    position: fixed;
+    display: none;
+}
+
+#details_left{
+    width: 540px;
+    height: 500px;
+    float: left;
+    background-color: #5388ff;
+}
+
+#details_right{
+    width: 160px;
+    height: 500px;
+    float: right;
+    background-color: #ff2527;
+}
+
+#details_left_top{
+    width: 540px;
+    height: 150px;
+    background-color: #C2BFFD;
+}
+
+#details_left_bottom{
+    width: 540px;
+    height: 350px;
+    background-color: #E8F8C4;
+}
+
+#content_details{
+    width: 520px;
+    height: 300px;
+    margin-left:10px;
+    background-color: darkgray;
+}
+
+#page_details{
+    width: 520px;
+    height: 40px;
+    margin: 10px;
+    background-color: hotpink;
+}
+
+tr
+{
+    background: #cbf5ff;
+    }
+tr:nth-child(2n)
+{
+    background: #f9f9f9;
+}
+tr
+{
+    background-color: expression((this.sectionRowIndex % 2 == 0) ? "#cbf5ff" : "#f9f9f9" );
+}
