@@ -44,6 +44,8 @@ class AppServer(tornado.web.Application):
         settings = dict(
             template_path = os.path.join(os.path.dirname(__file__),"templates"),
             static_path = os.path.join(os.path.dirname(__file__),"static"),
+            cookie_secret = "61oETzKXQAGeYdkL5gEmGeJJFuYh7EQnp2XdTP1o/Vo=",
+            login_url = "/login",
             debug = True
         )
         tornado.web.Application.__init__(self,handlers,**settings)
